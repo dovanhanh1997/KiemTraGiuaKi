@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [
+        [1, 4, 8],
+        [3, 4, 5],
+        [6, 7, 8]
+    ];
+    let array = [];
+    let sum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        document.write("<br>");
+        for (let j = 0; j < arr[i].length; j++) {
+            document.write(" " + arr[i][j] + " ");
+            if (i == 0) {
+                if (j == 0) {
+                    array.push(arr[i][j]);
+                }
+            }
+            if (i == 1) {
+                if (j == 1) {
+                    array.push(arr[i][j]);
+                }
+            }
+            if (i == 2) {
+                if (j == 2) {
+                    array.push(arr[i][j]);
+                }
+            }
+        }
+
+    }
+    document.write("<br>");
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    document.write("Tổng đường chéo là: "+sum);
+
+
+</script>
+</body>
+</html>

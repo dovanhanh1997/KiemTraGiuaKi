@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //   let number = prompt("Nhập số: ");
+    let array = [10,3,5,7,12,6];
+    let out = [];
+
+    let isPrime = function (number) {
+        if (number < 1) {
+            return false;
+        } else {
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    return false;
+                }
+            }
+            return true
+        }
+    };
+
+    function listPrime (){
+        for (let i = 0; i < array.length; i++) {
+            if (isPrime(array[i])){
+                out.push(array[i]);
+            }
+        }
+    }
+
+    listPrime();
+    console.log(out);
+</script>
+</body>
+</html>
